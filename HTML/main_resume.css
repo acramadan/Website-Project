@@ -1,0 +1,22 @@
+
+
+.edit-date a
+{
+    display: flex;
+    width: 100%;
+
+    text-align: right;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+h2
+{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.resume-text
+{
+    font-family: 'Roboto', sans-serif;
+}
