@@ -1,12 +1,121 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 
-
-.edit-date a
+body
 {
-    display: flex;
+    /*background-color: dimgrey;*/
+    background: linear-gradient(to left, #f0f0f0, #fcffff);
+}
+
+nav
+{
+    display: flexbox;
+    justify-content: space-around;
+    min-height: 8vh;
+    align-items: center;
+    text-align: center;
+
+}
+.header h1
+{
+    color: dodgerblue;
+    font-family: 'Oregano', cursive;
+    font-size: 55px;
+    text-shadow: 0.5px 0.5px;
+    text-emphasis-style: circle;
+    margin-top: -3px;
+    letter-spacing: 1px;
+    padding-bottom: 35px;
+}
+
+.header p
+{
+    color: dodgerblue;
+    text-shadow: 0.5px 0.5px darkgray;
+    margin-top: -30px;
+    padding-bottom: 35px;
+}
+
+.nav-links 
+{
+    font-size: 0;
+    border-top: 10px;
+    padding: 5px;
+}
+.nav-links ul
+{
+    list-style-type: none;
+}
+.nav-links li
+{
+    display: inline-flex;
+    justify-content: space-around;
+    width: 20%;
+
+}
+
+.nav-links a
+{
+    text-decoration: none;
+    color: #575757;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 14px;
+    background-size: cover;
+    padding-top: 10px;
+}
+
+.nav-links a:hover
+{
+    border-top: 5px solid dodgerblue;
+    padding-top: 5px;
+    
+}
+
+.burger
+{
+    display: none;
+}
+
+.burger a
+{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+
+    font-size: 22px;
+    color: #575757;
+    margin: 5px;
+    font-weight: bolder;
+
+}
+
+@media screen and (max-width: 650px)
+{
+    .nav-links
+    {
+        position: absolute;
+        right: 0px;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+}
+
+.resume
+{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.resume .edit-date
+{
     width: 100%;
-
+    position: block;
     text-align: right;
-
     font-family: 'Roboto', sans-serif;
 }
 
@@ -19,4 +128,34 @@ h2
 .resume-text
 {
     font-family: 'Roboto', sans-serif;
+}
+
+img
+{
+    display: block;
+    border: 5px solid dodgerblue;
+    float: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.source 
+{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.source li
+{
+    display: inline-block;
+
+    align-items: center;
+}
+
+.source .text
+{
+    color: rgb(16, 86, 156);
+    font-weight: bold;
 }
