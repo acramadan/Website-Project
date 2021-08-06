@@ -112,6 +112,8 @@ nav
 
 }
 
+/*  <<<                RESUME CSS              >>>  */
+
 .resume
 {
     margin-left: 5%;
@@ -126,16 +128,32 @@ nav
     font-family: 'Roboto', sans-serif;
 }
 
-h2
+.res-header
 {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
+}
+
+.res-header a
+{
+    text-decoration: none;
 }
 
 .resume-text
 {
     font-family: 'Roboto', sans-serif;
 }
+
+.resume ul
+{
+    width: 40%;
+    float: left;
+    margin: 0 5%;
+    
+    
+}
+
+
 
 img
 {
