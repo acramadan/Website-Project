@@ -195,9 +195,9 @@ img
 
 .desc li
 {
-    display: inline-block;
+    display: flex;
     color: #3ba57c;
     font-weight: bold;
-    align-items: center;
+    margin-left: 50%;
 }
 
