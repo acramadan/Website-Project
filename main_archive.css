@@ -7,7 +7,14 @@
 body
 {
     /*background-color: dimgrey;*/
-    background: linear-gradient(to left, #daf0e7, #d0faea);}
+    background: linear-gradient(to left, #daf0e7, #d0faea);
+}
+
+.albums
+{
+    display: flex;
+    text-align: center;
+}
 
 nav
 {
@@ -112,7 +119,7 @@ nav
 
 }
 
-.skills 
+.about 
 {
     position: block;
     text-align: center;
@@ -120,3 +127,4 @@ nav
     font-family: 'Roboto', sans-serif;
     color: #575757;
 }
+

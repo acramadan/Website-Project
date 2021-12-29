@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <Title>
-             Ashley Ramadan  
+             Family Archive Gallery  
         </Title>
         <link rel="stylesheet" href = "main_archive.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,9 +11,13 @@
         <link href="https://fonts.googleapis.com/css2?family=Atlasi&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Oregano&family=Roboto&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=VT323&family=Open+Sans&display=swap" rel="stylesheet">
+        <script src="https://sdk.amazonaws.com/js/aws-sdk-3.32.0.js"></script>
+    
+        
     </head>
     <body>
-        <script src="home.js"></script>
+        <!-- S3 ADDITION-->>
+        <script src="PhotoViewer.js"></script>
         <nav>
             <div class="header">        
                 <h1>Ashley Ramadan</h1>
@@ -33,8 +37,13 @@
             </div>
         </nav>
 
-        <div class="skills">
-            <h1>Work in Progress.</h1>
+        <div class="about">
+            <h1>What's this?</h1>
+            <p>Good question! Here is an attempt to code a photo gallery from an Amazon S3 bucket. If you see pictures, great! If not, I haven't figured it out yet.</p>
+        </div>
+        <div id="viewer"></div>
+        <div class="albums">
+            <script>listAlbums();</script>
         </div>
     </body>
 </html>
