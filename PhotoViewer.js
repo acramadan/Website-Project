@@ -91,6 +91,11 @@ function viewAlbum(albumName) {
       var message = photos.length ?
         '<p>The following photos are present.</p>' :
         '<p>There are no photos in this album.</p>';
+      var message2;
+        if (albumName.localeCompare("Ramadan"))
+      {
+        message2 = '<p>Primary locations: Boston, MA Dade City, FL West Palm Beach, FL</p>';
+      }
       var htmlTemplate = [
         '<div>',
           '<button onclick="listAlbums()">',
@@ -101,6 +106,7 @@ function viewAlbum(albumName) {
           'Album: ' + albumName,
         '</h2>',
         message,
+        message2,
         '<div>',
           getHtml(photos),
         '</div>',
