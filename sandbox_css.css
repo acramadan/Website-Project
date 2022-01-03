@@ -106,33 +106,6 @@ nav
 {
     border: 3px solid #3ba57c;
     padding-top: 5px;
-    
-}
-
-.burger
-{
-    display: none;
-}
-
-.burger a
-{
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-
-    font-size: 22px;
-    color: #575757;
-    margin: 5px;
-    font-weight: bolder;
-
-}
-
-.skills 
-{
-    position: block;
-    text-align: center;
-
-    font-family: 'Roboto', sans-serif;
-    color: #575757;
 }
 
 .bouncy{
@@ -148,4 +121,17 @@ nav
     48%{top:-0.4em}
     50%{top:0em}
     100%{top:0em;}
+}
+
+.zoom {
+  display: block;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+svg {
+  display: block;
+}
+.logo {
+  fill: #fff;
 }
