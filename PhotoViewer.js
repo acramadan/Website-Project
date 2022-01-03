@@ -78,7 +78,7 @@ function viewAlbum(albumName) {
           '<span>',
             '<div>',
               '<br/>',
-              '<img style="width:128px;height:128px;" src="' + photoUrl + '"/>',
+              '<img style="width:30%;height:auto;display:inline-flex;" src="' + photoUrl + '"/>',
             '</div>',
             '<div>',
               '<span>',
