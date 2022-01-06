@@ -13,6 +13,20 @@
         <link href="https://fonts.googleapis.com/css2?family=Oregano&family=Roboto&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=VT323&family=Open+Sans&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+        
+        <script>
+            var body=document.getElementsByTagName("body")[0];
+            var parent=document.getElementById("resume");
+            var child=document.getElementById("child-div");
+            body.onscroll = function(){
+                //console.log(documenhttps://fiddle.jshell.net/3urv0tp0/#tidyt.getElementById("child-div").style.top)
+                if(document.documentElement.scrollTop>=child.offsetTop)//Adjust Tolerance as you want
+                {
+                   child.style.display="block"
+                }
+
+            };
+        </script>
     </head>
     <body>
         <nav>
@@ -31,8 +45,71 @@
 
         </nav>
         <div class="resume">
-            <h1>Nice to meet you!</h1>
-                   
+            <h1 id="resume">Nice to meet you!</h1>
+            <p id="resume-body">Where should we start?</p>
         </div> 
         
+        
+        <div class="container">
+            <div class="company">
+                <ul class="rb-logo">
+                    <li class="logo">
+                        <p><a href="https://jmfamily.com/press-kit/southeast-toyota-distributors/">
+                            <img src="./photos/toyota_logo_transparent.png" alt="Southeast Toyota Distributors logo">
+                        </a></p>
+                  </li>
+                  <li class = "logo">
+                    <p><a href="https://www.nexteraenergy.com/">
+                        <img src="./photos/NextEra_Energy_logo.png" alt="Nextera Energy logo">
+                    </a></p>
+
+                  </li>
+                  <li class = "logo">
+                    <p><a href="https://www.caps.ua.edu/">
+                        <img class= "gap" src="./photos/University_of_Alabama_logo.svg.png" alt="Nextera Energy logo">
+                    </a></p>
+
+                  </li>
+                </ul>
+            </div>
+            <div class="rightbox">
+              <div class="rb-container">
+
+                <ul class="rb">
+                  <li class="rb-item" ng-repeat="itembx">
+                    <div class="timestamp">
+                      June 2019 - August 2019<br> Southeast Toyota
+                    </div>
+                    <div class="item-title">Data Management Marketing Intern</div>
+                    
+                  </li>
+                  <li class="rb-item" ng-repeat="itembx">
+                    <div class="timestamp">
+                      May 2020 - August 2020<br> NextEra Energy
+                    </div>
+                    <div class="item-title">Cloud Data Engineering Intern</div>
+                    
+                  </li>
+          
+                  <li class="rb-item" ng-repeat="itembx">
+                    <div class="timestamp">
+                      May 2021 - August 2021<br> NextEra Energy
+                    </div>
+                    <div class="item-title">Cloud Data Engineering Intern</div>
+          
+                  </li>
+                  <li class="rb-item" ng-repeat="itembx">
+                    <div class="timestamp">
+                      August 2021 - Present<br> Center for Advanced Public Safety
+                    </div>
+                    <div class="item-title">Student Software Developer</div>
+          
+                  </li>
+                  
+                </ul>
+
+          
+              </div>
+            </div>
+          </div>
     </body>
