@@ -6,144 +6,22 @@
 
 html, body
 {
-
-    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    background-image: url('./photos/Website-Background.png');
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     height: 100%;
 }
 
-nav
-{
-    display: flex;
-    min-height: 8vh;
-    
-    margin-left: 3%;
-    margin-top: 1%;
-    padding-bottom: 3%;
-}
-.header
-{
-    display: inline-flexbox;
-    align-items: left;
-    text-align: left;
-    float: left;
-}
-.header h1
-{
-    
-    align-items: left;
-    text-align: left;
-    float: left;
-    color: #77523f;
-    font-family: 'Dancing Script', cursive;
-    font-size: 55px;
-    text-shadow: 0.9px 0.9px;
-    text-emphasis-style: circle;
-    margin-top: -3px;
-    letter-spacing: 0.5px;
-    padding-bottom: 1px;
-}
 
-.header p
+nav .nav-links
 {
-    display: relative;
-    color: #77523f;
-    font-family: 'Roboto', sans-serif;
-    text-shadow: 0.5px 0.5px darkgray;
-    
-
-    letter-spacing: 4%;
-    font-size: 20px;
-}
-
-.nav-links 
-{
-    font-size: 0;
-    margin-left: 12%;
-    margin-top: 1%;
-    
-}
-.nav-links ul
-{
-    display: inline-block;
-    float: right;
-
-
     list-style-type: none;
-
+    padding-top: 2%;
+    padding-left: 2%;
 }
-.nav-links li
+
+nav .nav-links .resume img
 {
-    display: inline-block;
-    padding: 20px;
-}
-
-.nav-links a
-{
-    text-decoration: none;
-    color: #575757;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    letter-spacing: 1px;
-    font-size: 14px;
-    background-size: cover;
-    
-    margin:0 0.3em 0.3em 0;
-
-    border: 2.5px solid #77523f;
-    padding:0.35em 1.0em;
-    box-sizing: border-box;
-    border-radius: 12px;
-}
-
-.nav-links a:hover
-{
-    border: 3px solid #842497;
-    padding-top: 5px;
-    
-}
-
-
-.bouncy{
-    animation:bouncy 5s infinite linear;
-    position:relative;
-}
-
-@keyframes bouncy {
-    0%{top:0em}
-    40%{top:0em}
-    43%{top:-0.9em}
-    46%{top:0em}
-    48%{top:-0.4em}
-    50%{top:0em}
-    100%{top:0em;}
-}
-
-.blinking-text
-{
-    position: absolute;
-    text-align: center;
-    margin-left: 30%;
-    margin-right: 30%;
-    margin-top: 20%;
-    color: #575757;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 200;
-}
-
-.blinking-text h1
-{
-    color: #77523f;
-}
-
-h1.blinking-text h1
-{
-    font-size: 3.5em;
-    color: #9333a7;
-}
-
-h3.blinking-text
-{
-    font-size: 2em;
-    
+    width: 75px;
+    height: auto;
 }

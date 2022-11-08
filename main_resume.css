@@ -7,90 +7,79 @@
 html, body
 {
     background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    background-size: cover;
     background-repeat: no-repeat;
+    height: 100%;
+    overflow: hidden;
 }
 
 nav
 {
     display: flex;
-    min-height: 8vh;
     
-    margin-left: 3%;
-    margin-top: 1%;
-    padding-bottom: 3%;
 }
 .header
 {
-    display: inline-flexbox;
-    align-items: left;
-    text-align: left;
-    float: left;
+    display: absolute;
+    white-space: nowrap;
+
+    width: 100%;
+    height: 100%;
+    margin-left: 3%;
+    margin-top: 1%;
+
 }
 .header h1
 {
     
-    align-items: left;
-    text-align: left;
-    float: left;
     color: #77523f;
     font-family: 'Dancing Script', cursive;
-    font-size: 55px;
+    font-size: 3.7vw;
     text-shadow: 0.9px 0.9px;
-    text-emphasis-style: circle;
-    margin-top: -3px;
-    letter-spacing: 0.5px;
-    padding-bottom: 1px;
     
-
+    
+    letter-spacing: 0.5px;
 }
 
 .header p
 {
-    display: relative;
-    color: #77523f;
+    color: #575757;
     font-family: 'Roboto', sans-serif;
     text-shadow: 0.5px 0.5px darkgray;
     
 
     letter-spacing: 4%;
-    font-size: 20px;
+    font-size: 1.5vw;
 }
 
 .nav-links 
 {
-    font-size: 0;
-    margin-left: 12%;
-    margin-top: 1%;
-    
-}
-.nav-links ul
-{
-    display: relative;
-    float: right;
-
 
     list-style-type: none;
-
+    display: flex;
+    white-space: nowrap;
+    margin-right: 10%;
 }
+
 .nav-links li
 {
-    display: inline-block;
+    display: absolute;
+    width: 100%;
+    height: 100%;
     padding: 20px;
 }
 
 .nav-links a
 {
+    display:inline-block;
     text-decoration: none;
-    color: #575757;
+    color: #2e25a5;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     letter-spacing: 1px;
-    font-size: 14px;
+    font-size: 0.9vw;
     background-size: cover;
-    
-    margin:0 0.3em 0.3em 0;
-
-    border: 2.5px solid #77523f;
+    border: 3px solid #575757;
     padding:0.35em 1.0em;
     box-sizing: border-box;
     border-radius: 12px;
@@ -98,14 +87,16 @@ nav
 
 .nav-links a:hover
 {
-    border: 3px solid #842497;
+    border: 3px solid #2e25a5;
+    background-color: #2e25a5;
+    color: rgb(225, 231, 235);
     padding-top: 5px;
     
 }
 
 
 .bouncy{
-    animation:bouncy 5s infinite linear;
+    animation:bouncy 10s infinite linear;
     position:relative;
 }
 
@@ -142,13 +133,6 @@ nav
 
 }
 
-.resume .edit-date
-{
-    width: 100%;
-    position: block;
-    text-align: right;
-    font-family: 'Roboto', sans-serif;
-}
 
 h2
 {
@@ -191,23 +175,17 @@ ul.rb-logo li.logo img
     height: auto;
     padding-top: 5%;
     padding-left: 60%;
-    padding-bottom: 10%;
+    padding-bottom: 1%;
 }
 
 ul.rb-logo li.logo .gap
 {
     display:inline;
-    width: 70%;
+    width: 65%;
     height: auto;
-    padding-top: 10%;
     padding-left: 60%;
-    padding-bottom: 10%;
 }
 
-
-nav {
-  margin: 2.6em auto;
-}
 
 nav a {
   list-style: none;
@@ -215,7 +193,7 @@ nav a {
   color: #232931;
   font-size: 1.1em;
   display: block;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 
@@ -298,3 +276,8 @@ ul.rb li .logo {
   color: #4f5b66;
 }
 
+@media screen and (max-width: 2000px) {
+    .left, .main, .right {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+  }
